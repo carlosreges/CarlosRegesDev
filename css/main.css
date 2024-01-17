@@ -1,5 +1,10 @@
 /**
  * =================================================================== 
+ *
+ *  Kards v1.0 Main Stylesheet
+ *  url: styleshout.com
+ *  03-01-2016
+ *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
  *  02. base style overrides
@@ -19,6 +24,7 @@
  *  16. stats
  *  17. contact
  *  18. footer
+ *
  * =================================================================== 
  */
 
@@ -1090,10 +1096,10 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 180px;
+	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 70px;
+	left: 90px;
 	top: 0;
 }
 header .logo {
@@ -1484,8 +1490,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-	background: rgb(0,0,0);
-	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(18,18,65,1) 75%, rgba(13,18,108,1) 100%);
+	background: #FFFFFF;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
 }
@@ -1532,7 +1537,7 @@ header .logo a {
 }
 .about-content .info-list li strong {
 	font-family: "poppins-bold", sans-serif;
-	color: #FFFFFF;
+	color: #313131;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	font-size: 1.5rem;
@@ -1541,7 +1546,7 @@ header .logo a {
 .about-content .info-list li span {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
-	color: #FFFFFF;
+	color: #888888;
 	font-size: 1.5rem;
 	line-height: 1;
 }
