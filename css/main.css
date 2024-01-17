@@ -1,10 +1,6 @@
 /**
  * =================================================================== 
  *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
- *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
  *  02. base style overrides
@@ -90,7 +86,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-	color: #FF0077;
+	color: #1a9e46;
 	outline: 0;
 }
 
@@ -309,7 +305,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #FF0077;
+	color: #3286f3;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -736,8 +732,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid #FF0077;
-	color: #FF0077;
+	border: 3px solid #41ce00;
+	color: #17c400;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -1138,7 +1134,7 @@ header .logo a {
 }
 .menu-toggle span {
 	display: block;
-	background-color: #FF0077;
+	background-color: #42c704;
 	width: 24px;
 	height: 3px;
 	margin-top: -1.5px;
@@ -1196,7 +1192,7 @@ header .logo a {
 	background-color: rgba(255, 0, 119, 0);
 }
 .menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #ff0077;
+	background-color: #09b1c7;
 	-moz-transition-delay: 0s, 0.2s;
 	-o-transition-delay: 0s, 0.2s;
 	-webkit-transition-delay: 0s, 0.2s;
@@ -1257,7 +1253,7 @@ header .logo a {
 }
 .main-navigation li.current > a {
 	background: none;
-	color: #FF0077;
+	color: #42e900;
 }
 
 /**
@@ -1337,7 +1333,7 @@ header .logo a {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #cc005f;
+	color: #9ee913;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -2362,7 +2358,7 @@ header .logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #FF0077;
+	background: #064de6;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
@@ -2423,6 +2419,10 @@ header .logo a {
 .contact-info .icon i {
 	font-size: 4.2rem;
 	color: #FFFFFF;
+}
+.contact-info .icon i:hover {
+	font-size: 4.2rem;
+	color: #FF0077;
 }
 .contact-info h5 {
 	color: #FF0077;
@@ -2522,6 +2522,9 @@ footer .footer-social li {
 }
 footer .footer-social li a {
 	color: #FFFFFF;
+}
+footer .footer-social li a:hover {
+	color: #FF0077;
 }
 footer .copyright span {
 	display: inline-block;

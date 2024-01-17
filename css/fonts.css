@@ -104,3 +104,10 @@
     font-style: normal;
 }
 
+/*
+ * Headliner 
+================================================================================ */
+@font-face {
+    font-family: 'HeadlinerNo45';
+    src: url('../fonts/headliner/HeadlinerNo45.ttf') format('truetype');
+}
