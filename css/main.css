@@ -297,7 +297,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #FF0077;
+	background: #42e900;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -425,7 +425,7 @@ img.pull-left {
 	display: none;
 }
 .pace .pace-progress {
-	background: #FF0077;
+	background: #42e900;
 	position: fixed;
 	z-index: 900;
 	top: 0;
@@ -468,7 +468,7 @@ img.pull-left {
 	border-top: 11px solid rgba(255, 255, 255, 0.1);
 	border-right: 11px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
-	border-left: 11px solid #FF0077;
+	border-left: 11px solid #42e900;
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 	display: block;
@@ -590,8 +590,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #cc005f;
-	border-bottom: 1px solid #FF0077;
+	color: #42e900;
+	border-bottom: 1px solid #42e900;
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
@@ -921,7 +921,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #FF0077;
+	color: #42e900;
 }
 .stats-tabs li a em {
 	display: block;
@@ -1037,7 +1037,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
-	color: #FF0077;
+	color: #42e900;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -1380,7 +1380,7 @@ header .logo a {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: #42e900;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1412,7 +1412,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #42e900;
 }
 
 /**
@@ -1625,7 +1625,7 @@ header .logo a {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #FF0077;
+	color: #42e900;
 }
 
 #resume .resume-timeline {
@@ -2118,7 +2118,7 @@ header .logo a {
 	color: white;
 }
 #services .section-intro h5 {
-	color: #FF0077;
+	color: #42e900;
 }
 #services .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2140,7 +2140,7 @@ header .logo a {
 }
 .services-list .icon i {
 	font-size: 5.4rem;
-	color: #FF0077;
+	color: #42e900;
 }
 .services-list h3 {
 	color: #FFFFFF;
@@ -2168,7 +2168,7 @@ header .logo a {
 	background: #FFFFFF;
 }
 .owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
+	background: #42e900;
 }
 
 
@@ -2179,7 +2179,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #stats {
-	background: #990047;
+	background: #42e900;
 	padding-top: 7.2rem;
 	padding-bottom: 6rem;
 	text-align: center;
@@ -2254,7 +2254,7 @@ header .logo a {
 	color: white;
 }
 #contact .section-intro h5 {
-	color: #FF0077;
+	color: #42e900;
 }
 #contact .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2346,7 +2346,7 @@ header .logo a {
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-	border-color: #FF0077;
+	border-color: #42e900;
 	color: #FFFFFF;
 }
 #contact button.submitform {
@@ -2362,7 +2362,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #42e900;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2422,10 +2422,10 @@ header .logo a {
 }
 .contact-info .icon i:hover {
 	font-size: 4.2rem;
-	color: #FF0077;
+	color: #42e900;
 }
 .contact-info h5 {
-	color: #FF0077;
+	color: #42e900;
 }
 
 /**
@@ -2499,7 +2499,7 @@ footer a, footer a:visited {
 	color: #FFFFFF;
 }
 footer a:hover, footer a:focus {
-	color: #FF0077;
+	color: #42e900;
 }
 footer .row {
 	max-width: 900px;
@@ -2524,7 +2524,7 @@ footer .footer-social li a {
 	color: #FFFFFF;
 }
 footer .footer-social li a:hover {
-	color: #FF0077;
+	color: #42e900;
 }
 footer .copyright span {
 	display: inline-block;
@@ -2581,7 +2581,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #09b1c7;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
