@@ -36,39 +36,169 @@
 
 	<!-- header 
    ================================================== -->
-   <header>   	
-   	<div class="row">
+   <header>
+		<div class="row">
 
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+			<div class="top-bar">
+				<a class="menu-toggle" href="#"><span>Menú</span></a>
 
-	   		<div class="logo">
-		         <a href="#">Menú</a>
-		      </div>		      
+				<div class="logo">
+					<a href="index.html">Menú</a>
+				</div>
 
-          <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-              <li class="current">
-                <a href="index.html" title="Home">Home</a>
-              </li>
-              <li>
-                <a href="about.html" title="About">Sobre mí</a>
-              </li>
-              <li>
-                <a href="resume.html" title="CV">Currículum</a>
-              </li>
-              <li>
-                <a href="projects.html" title="Projects">Proyectos</a>
-              </li>
-              <li>
-                <a href="blog.html" title="Blog">Blog</a>
-              </li>
-              <li>
-                <a href="contact.html" title="Contact">Contacto</a>
-              </li>
-            </ul>
-          </nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
+				<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll" href="#about" title="">Sobre mí</a></li>
+						<li><a class="smoothscroll" href="#resume" title="">Experiencia</a></li>
+						<li><a class="smoothscroll" href="#portfolio" title="">Proyectos</a></li>
+						<li><a class="smoothscroll" href="#services" title="">Habilidades</a></li>
+						<li><a class="smoothscroll" href="#contact" title="">Contacto</a></li>
+						<!-- <li><a href="styles.html" title="">Style Demo</a></li>				 -->
+					</ul>
+				</nav>
+			</div> <!-- /top-bar -->
+
+		</div> <!-- /row -->
+	</header> <!-- /header -->
+
+<!-- contact
+   ================================================== -->
+   <section id="contact">
+
+		<div class="row section-intro">
+			<div class="col-twelve">
+
+				<h5>Siempre a la orden.</h5>
+				<h1>Contáctame</h1>
+
+			</div>
+		</div> <!-- /section-intro -->
+
+		<div class="row contact-form">
+
+			<div class="col-twelve">
+
+				<!-- form -->
+				<div></div>
+				<!-- <script src="//embed.typeform.com/next/embed.js"></script> -->
+				<form name="contactForm" id="form">
+					<fieldset>
+
+						<div class="form-field">
+							<input name="contactName" type="text" id="contactName" placeholder="Nombre" name="name" minlength="2"
+								required="">
+						</div>
+						<div class="form-field">
+							<input name="contactEmail" type="email" id="contactEmail" placeholder="Correo electrónico" name="email"
+								required="">
+						</div>
+						<div class="form-field">
+							<input name="contactSubject" type="text" id="contactSubject" placeholder="Teléfono" name="phone">
+						</div>
+						<div class="form-field">
+							<textarea name="contactMessage" id="contactMessage" placeholder="Mensaje" name="message" rows="10"
+								cols="50" required=""></textarea>
+						</div>
+						<div class="form-field">
+							<button type="submit" id="button" value="Send Email">Enviar</button>
+						</div>
+
+					</fieldset>
+				</form>
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+				<script type="text/javascript">
+					emailjs.init('Ck3VIlKRQqZ_oi8_R')
+				</script>
+				<!-- Form End -->
+
+				<!-- contact-warning -->
+				<div id="message-warning">
+				</div>
+				<!-- contact-success -->
+				<div id="message-success">
+					<i class="fa fa-check"></i>Tu mensaje fue enviado. ¡Muchas gracias!<br>
+				</div>
+
+			</div> <!-- /col-twelve -->
+
+		</div> <!-- /contact-form -->
+
+		<div class="row contact-info">
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<a href="blog.html"><i class="icon-book"></a></i>
+				</div>
+
+				<h5><a href="blog.html">Léeme</a></h5>
+
+			</div>
+
+			<div class="col-four tab-full collapse">
+
+				<div class="icon">
+				</div>
+
+
+			</div>
+
+			<div class="col-four tab-full">
+
+				<div class="icon">
+					<a href="tel:+5493513400891"><i class="icon-phone"></i></a>
+				</div>
+
+				<h5><a href="tel:+5493513400891">Llámame</a></h5>
+			</div>
+
+		</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
+
+
+	<!-- footer
+   ================================================== -->
+
+	<footer>
+		<div class="row">
+
+			<div class="col-six tab-full pull-right social">
+
+				<ul class="footer-social">
+					<li><a href="https://github.com/carlosreges" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://linkedin.com/in/carlosreges" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://wa.link/77he57" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+					<li><a href="https://t.me/carlosreges" target="_blank"><i class="fa fa-telegram"></i></a></li>
+				</ul>
+
+			</div>
+
+			<div class="col-six tab-full">
+				<div class="copyright">
+					<span>Diseñado por <a href="http://www.carlosreges.com.ar/">Carlos Reges</a></span>
+				</div>
+			</div>
+
+			<div id="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			</div>
+
+		</div> <!-- /row -->
+	</footer>
+
+	<div id="preloader">
+		<div id="loader"></div>
+	</div>
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
