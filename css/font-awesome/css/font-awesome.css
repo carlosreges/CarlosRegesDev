@@ -1342,6 +1342,9 @@
 .fa-yahoo:before {
   content: "\f19e";
 }
+.fa-whatsapp:before {
+  content: "\f232";
+}
 .fa-google:before {
   content: "\f1a0";
 }
