@@ -1248,7 +1248,7 @@ header .logo a {
 	border: none;
 }
 .main-navigation li a:hover {
-	color: #FF0077;
+	color: #42e900;
 	padding-left: 1rem;
 }
 .main-navigation li.current > a {
