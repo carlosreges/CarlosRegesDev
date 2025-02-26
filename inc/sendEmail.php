@@ -1,4 +1,4 @@
-﻿<?php
+﻿<?php 
 
 // Replace this with your own email address
 $siteOwnersEmail = 'creges@gmail.com';
