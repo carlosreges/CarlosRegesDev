@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 4rem 0 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.footer-logo {
+  flex: 0 0 30%;
+}
+
+.footer-logo h2 {
+  color: var(--light-color);
+  margin-bottom: 1rem;
+}
+
+.footer-links, .footer-contact {
+  flex: 0 0 30%;
+}
+
+.footer-links h3, .footer-contact h3 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer-contact p {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact i {
+  margin-right: 0.75rem;
+  color: var(--accent-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+}
+
+.hidden-info a {
+  color: var(--light-color);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-info a:hover {
+  opacity: 1;
+  color: var(--accent-color);
+}
+
+.hidden-info a span {
+  display: none; /* Oculta el texto real */
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-logo, .footer-links, .footer-contact {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+#[component] {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  padding: 0 2rem;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1200px;
+  padding: 0 2rem;
+}

@@ -1,0 +1,92 @@
+<section id="contact" class="section dark-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-down">Contáctame</h2>
+
+    <div class="contact-content">
+      <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+        <div class="contact-card">
+          <div class="icon-box">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Ubicación</h3>
+          <p>Córdoba, Argentina</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon-box">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p class="hidden-info">
+            <a href="mailto:creges23&#64;gmail.com" aria-label="Escríbeme">
+              <i class="fas fa-envelope"></i> Escríbeme
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="icon-box">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Teléfono</h3>
+          <p class="hidden-info">
+            <a href="tel:+5493513400891" aria-label="Llámame">
+              <i class="fas fa-phone"></i> Llámame
+            </a>
+          </p>
+        </div>
+
+        <div class="social-links">
+          <h3>Redes Sociales</h3>
+          <div class="links-grid">
+            <a href="https://linkedin.com/in/carlosreges"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/carlosreges/"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/carlosreges"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/carlosreges.dev"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form" data-aos="fade-left" data-aos-delay="400">
+        <h3>Envíame un mensaje</h3>
+        <form action="https://formspree.io/f/mrbppgqj" method="POST" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" formControlName="name" placeholder="Tu nombre"
+                   [ngClass]="{'is-invalid': submitted && contactForm.get('name')?.errors}">
+            <div *ngIf="submitted && contactForm.get('name')?.errors" class="error-message">
+              Por favor ingresa tu nombre
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" formControlName="email" placeholder="Tu email"
+                   [ngClass]="{'is-invalid': submitted && contactForm.get('email')?.errors}">
+            <div *ngIf="submitted && contactForm.get('email')?.errors" class="error-message">
+              Por favor ingresa un email válido
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" formControlName="subject" placeholder="Asunto">
+          </div>
+
+          <div class="form-group">
+            <textarea rows="5" formControlName="message" placeholder="Tu mensaje"
+                      [ngClass]="{'is-invalid': submitted && contactForm.get('message')?.errors}"></textarea>
+            <div *ngIf="submitted && contactForm.get('message')?.errors" class="error-message">
+              Por favor, ingresa tu mensaje
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Enviar Mensaje <i class="fas fa-paper-plane"></i>
+          </button>
+
+          <div *ngIf="success" class="success-message">
+            ¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

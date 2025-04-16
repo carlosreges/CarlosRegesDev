@@ -1,0 +1,217 @@
+#contact {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  position: relative;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../assets/bg.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  color: var(--light-color);
+}
+
+.section-title::after {
+  background-color: var(--accent-color);
+}
+
+.contact-content {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.contact-info {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-align: center;
+  border-left: 3px solid var(--accent-color);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  color: var(--light-color);
+}
+
+.social-links {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-left: 3px solid var(--accent-color);
+}
+
+.social-links h3 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.links-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.links-grid a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-color);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.links-grid a:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  transform: translateY(-3px);
+}
+
+.contact-form {
+  flex: 0 0 60%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-left: 3px solid var(--accent-color);
+}
+
+.contact-form h3 {
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  font-family: var(--body-font);
+  color: var(--light-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.contact-form button i {
+  transition: transform 0.3s ease;
+}
+
+.contact-form button:hover i {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+    flex: 0 0 100%;
+  }
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.success-message {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.is-invalid {
+  border-color: #e74c3c !important;
+}
