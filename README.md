@@ -17,6 +17,7 @@ Soy un desarrollador web con sólidos conocimientos en el desarrollo de aplicaci
 
 ### Tecnologías Web
 - Angular
+- React
 - Node.js
 - Bootstrap
 

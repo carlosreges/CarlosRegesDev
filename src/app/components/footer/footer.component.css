@@ -86,7 +86,7 @@
   transition: opacity 0.3s ease;
 }
 
-.hidden-info a:hover {
+.hidden-info a:hover { 
   opacity: 1;
   color: var(--accent-color);
 }
