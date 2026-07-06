@@ -92,13 +92,14 @@
 
 .detail-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .detail-label {
   font-weight: 600;
   color: var(--accent-color);
-  margin-right: 0.5rem;
 }
 
 .detail-value {

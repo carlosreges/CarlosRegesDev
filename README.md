@@ -1,7 +1,16 @@
 # Hola, soy **Carlos Reges** y te doy la bienvenida
 ## Hi, I'm **Carlos Reges** and welcome to my profile
 
-Soy un apasionado desarrollador web con experiencia en diversas tecnologías. No obstante, soy un autodidacta en el aprendizaje pues vengo del campo de la docencia, en la cual vengo ejerciendo como profesor de apoyo escolar en clases particulares. Esto no me ha detenido en avanzar sobre lo que he proyectado: he realizado muchos cursos y bootcamps ofrecidos por empresas e instituciones, además del aprendizaje
+Soy un apasionado desarrollador web con experiencia en diversas tecnologías. No obstante, soy un autodidacta en el aprendizaje pues vengo del campo de la docencia, en la cual vengo ejerciendo como profesor de apoyo escolar en clases particulares. Esto no me ha detenido en avanzar sobre lo que he proyectado: he realizado muchos cursos y bootcamps ofrecidos por empresas e instituciones, además del aprendizaje continuo a través de la práctica en proyectos reales.
+
+## 🚀 Cómo ejecutar este proyecto
+
+Para visualizar este portafolio localmente, sigue estos pasos:
+
+1.  Clona el repositorio.
+2.  Ejecuta `npm install` para instalar las dependencias.
+3.  Ejecuta `ng serve` para iniciar el servidor de desarrollo.
+4.  Navega a `http://localhost:4200/`.
 
 ## Sobre Mí
 

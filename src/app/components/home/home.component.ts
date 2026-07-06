@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     const options = {
-      strings: ['Back-end Developer', 'Java Expert', 'Angular Developer', 'Database Specialist'],
+      strings: ['Salesforce Developer Trainee', 'Trailhead Learner', 'Java & Angular Developer', 'Future CRM Builder'],
       typeSpeed: 50,
       backSpeed: 30,
       backDelay: 1500,

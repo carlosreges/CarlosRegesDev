@@ -112,16 +112,6 @@
   }
 }
 
-#[component] {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--light-color);
-  padding: 0 2rem;
-}
-
 .container {
   position: relative;
   z-index: 2;

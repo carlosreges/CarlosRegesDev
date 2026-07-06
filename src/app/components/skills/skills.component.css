@@ -71,7 +71,7 @@
 
 .skill-category {
   background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
@@ -101,29 +101,27 @@
   background-color: var(--accent-color);
 }
 
-.skill-item {
-  margin-bottom: 1.5rem;
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+.skill-list {
   color: var(--light-color);
+  display: grid;
+  gap: 1rem;
+  list-style: none;
 }
 
-.skill-bar {
-  height: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
+.skill-list li {
+  line-height: 1.6;
+  padding-left: 1.5rem;
+  position: relative;
 }
 
-.skill-progress {
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 10px;
-  transition: width 1s ease;
+.skill-list li::before {
+  color: var(--secondary-color);
+  content: '\f058';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  left: 0;
+  position: absolute;
+  top: 0.1rem;
 }
 
 @media screen and (max-width: 992px) {

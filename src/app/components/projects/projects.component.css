@@ -36,6 +36,14 @@
   color: var(--light-color);
 }
 
+.projects-intro {
+  color: rgba(248, 250, 252, 0.9);
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 760px;
+  text-align: center;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -45,7 +53,8 @@
 
 .project-card {
   background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -55,20 +64,22 @@
   transform: translateY(-10px);
 }
 
-.project-image {
+.project-visual {
+  align-items: center;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.24), rgba(245, 158, 11, 0.22));
+  color: var(--accent-color);
+  display: flex;
+  font-size: 4rem;
   height: 200px;
-  overflow: hidden;
+  justify-content: center;
 }
 
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+.project-visual i {
+  transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-image img {
-  transform: scale(1.1);
+.project-card:hover .project-visual i {
+  transform: scale(1.08);
 }
 
 .project-info {
@@ -84,6 +95,7 @@
 .project-info p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  color: rgba(248, 250, 252, 0.9);
 }
 
 .project-tags {
@@ -104,6 +116,7 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .btn-project {
@@ -116,7 +129,7 @@
   transition: all 0.3s ease;
   background-color: transparent;
   border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .btn-project:hover {
