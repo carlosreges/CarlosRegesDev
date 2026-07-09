@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import Typed from 'typed.js';
 
 @Component({
@@ -6,20 +6,29 @@ import Typed from 'typed.js';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements AfterViewInit, OnDestroy {
+  @ViewChild('typedText') typedText!: ElementRef<HTMLElement>;
+  private typed?: Typed;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     const options = {
       strings: ['Salesforce Developer', 'CRM Solutions Builder', 'Java & Angular Developer', 'Trailhead Learner'],
       typeSpeed: 50,
       backSpeed: 30,
       backDelay: 1500,
       startDelay: 500,
-      loop: true
+      loop: true,
+      smartBackspace: false,
+      showCursor: true,
+      cursorChar: '|'
     };
 
-    const typed = new Typed('#typed-text', options);
+    this.typed = new Typed(this.typedText.nativeElement, options);
+  }
+
+  ngOnDestroy(): void {
+    this.typed?.destroy();
   }
 }

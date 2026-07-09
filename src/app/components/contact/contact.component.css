@@ -212,6 +212,15 @@
   text-align: center;
 }
 
+.form-error-message {
+  background-color: rgba(231, 76, 60, 0.16);
+  color: #ffb4a8;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .is-invalid {
   border-color: #e74c3c !important;
 }

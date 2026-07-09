@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,14 +8,17 @@ import { EmailService } from '../../services/email.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  private readonly formspreeEndpoint = 'https://formspree.io/f/xojoodnv';
+
   contactForm!: FormGroup;
   submitted = false;
   success = false;
   isLoading = false;
+  errorMessage = '';
 
   constructor(
     private formBuilder: FormBuilder,
-    private emailService: EmailService
+    private http: HttpClient
   ) {}
 
   ngOnInit() {
@@ -32,6 +35,8 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
+    this.success = false;
+    this.errorMessage = '';
 
     if (this.contactForm.invalid) {
       return;
@@ -39,18 +44,28 @@ export class ContactComponent implements OnInit {
 
     this.isLoading = true;
 
-    // Si deseas usar el servicio para enviar los datos:
-    // this.emailService.sendEmail(this.contactForm.value).subscribe({
-    //   next: () => this.handleSuccess(),
-    //   error: (err) => console.error('Error enviando el mensaje', err)
-    // });
+    const headers = new HttpHeaders({ Accept: 'application/json' });
+    const payload = {
+      ...this.contactForm.value,
+      source: 'Portfolio Carlos Reges'
+    };
 
-    // Por ahora manejamos la UI como ya lo hacías
+    this.http.post(this.formspreeEndpoint, payload, { headers }).subscribe({
+      next: () => this.handleSuccess(),
+      error: () => {
+        this.isLoading = false;
+        this.errorMessage = 'No pude enviar el mensaje. Intenta nuevamente o escríbeme por email.';
+      }
+    });
+  }
+
+  private handleSuccess() {
     this.success = true;
     this.isLoading = false;
+    this.contactForm.reset();
+    this.submitted = false;
+
     setTimeout(() => {
-      this.contactForm.reset();
-      this.submitted = false;
       this.success = false;
     }, 5000);
   }
