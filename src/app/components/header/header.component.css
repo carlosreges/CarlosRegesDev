@@ -13,6 +13,9 @@
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   color: var(--light-color);
   font-family: var(--heading-font);
   font-size: 1.5rem;
@@ -24,6 +27,32 @@
 .navbar-brand:hover {
   color: #ff6b6b;
   transform: scale(1.05);
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-text {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light-color);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-text {
+    font-size: 1.25rem;
+  }
 }
 
 .navbar-links {
