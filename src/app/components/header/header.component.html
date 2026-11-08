@@ -3,6 +3,9 @@
     <a class="navbar-brand" routerLink="/">
       <img src="/assets/CR_logo.png" alt="Carlos Reges Logo" class="navbar-logo">
     </a>
+    <button class="theme-toggle" (click)="toggleTheme()" aria-label="Cambiar tema">
+      <i class="fas" [class.fa-moon]="!isDarkMode" [class.fa-sun]="isDarkMode"></i>
+    </button>
     <ul class="navbar-links">
       <li><a routerLink="/" class="nav-link">Inicio</a></li>
       <li><a routerLink="/about" class="nav-link">Sobre mí</a></li>

@@ -1,17 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* Variables globales */
+/* Variables globales - Tema oscuro (por defecto) */
 :root {
   --primary-color: #2563eb;      /* Azul como color principal */
   --secondary-color: #4ade80;    /* Verde secundario */
-  --dark-color: #1e293b;         /* Casi negro para el fondo */
-  --light-color: #f8fafc;        /* Blanco hueso para el texto */
+  --dark-color: #1e293b;         /* Fondo oscuro */
+  --light-color: #f8fafc;        /* Texto claro */
   --accent-color: #f59e0b;       /* Amarillo/naranja para acentos */
   --text-color: #334155;         /* Color de texto general */
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Variables globales - Tema claro */
+[data-theme="light"] {
+  --primary-color: #1d4ed8;
+  --secondary-color: #16a34a;
+  --dark-color: #ffffff;         /* Fondo claro */
+  --light-color: #0f172a;        /* Texto oscuro */
+  --accent-color: #d97706;
+  --text-color: #334155;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Ajustes específicos modo claro */
+[data-theme="light"] body {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+[data-theme="light"] .navbar {
+  background-color: var(--dark-color);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="light"] .dark-section,
+[data-theme="light"] .contact-card,
+[data-theme="light"] .social-links,
+[data-theme="light"] .contact-form,
+[data-theme="light"] .skill-category,
+[data-theme="light"] .project-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  color: var(--light-color);
+}
+
+[data-theme="light"] .dark-section::before {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .dark-section::after {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .section-title {
+  color: var(--light-color);
+}
+
+[data-theme="light"] .section-title::after {
+  background-color: var(--accent-color);
+}
+
+[data-theme="light"] .form-group input,
+[data-theme="light"] .form-group textarea {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--light-color);
+}
+
+[data-theme="light"] .form-group input::placeholder,
+[data-theme="light"] .form-group textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .btn-outline,
+[data-theme="light"] .button.stroke {
+  color: var(--light-color);
+  border: 2px solid var(--light-color);
+}
+
+[data-theme="light"] .intro-position span {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--light-color);
+}
+
+[data-theme="light"] .nav-link:hover {
+  color: var(--accent-color);
+}
+
+[data-theme="light"] .navbar-brand:hover {
+  color: var(--accent-color);
 }
 
 /* Importar fuentes */

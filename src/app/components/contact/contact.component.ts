@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../../environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -8,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  private readonly formspreeEndpoint = 'https://formspree.io/f/xojoodnv';
+  private readonly formspreeEndpoint = environment.formspreeEndpoint;
 
   contactForm!: FormGroup;
   submitted = false;
@@ -26,7 +27,7 @@ export class ContactComponent implements OnInit {
       name: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', [Validators.maxLength(100)]],
-      message: ['', [Validators.required, Validators.minLength(10)]]
+      message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(1000)]]
     });
   }
 
@@ -70,3 +71,4 @@ export class ContactComponent implements OnInit {
     }, 5000);
   }
 }
+
